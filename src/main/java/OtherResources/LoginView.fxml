@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="459.0" minWidth="10.0" prefWidth="370.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="351.0" minHeight="10.0" prefHeight="170.0" valignment="CENTER" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="600.0" minHeight="10.0" prefHeight="347.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <ImageView fitHeight="216.0" fitWidth="397.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+         <image>
+            <Image url="@../../../../../../../Downloads/Black%20and%20White%20Illustrative%20Hand%20Weightlifting%20Badge%20Health%20and%20Fitness%20Gym%20Logo%20%20(6).png" />
+         </image>
+         <GridPane.margin>
+            <Insets top="30.0" />
+         </GridPane.margin>
+      </ImageView>
+      <VBox alignment="CENTER" prefHeight="350.0" prefWidth="253.0" style="-fx-background-radius: 20 20 20 20; -fx-border-radius: 20 20 20 20; -fx-border-color: #000000; -fx-border-width: 3;" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets bottom="40.0" left="50.0" right="50.0" top="25.0" />
+         </GridPane.margin>
+         <children>
+            <Label id="label" text="Nombre de usuario:">
+               <VBox.margin>
+                  <Insets right="70.0" />
+               </VBox.margin>
+            </Label>
+            <TextField id="textfield">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <Label id="label" prefWidth="64.0" text="Contraseña">
+               <VBox.margin>
+                  <Insets right="110.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <PasswordField styleClass="textfield">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" top="10.0" />
+               </VBox.margin>
+            </PasswordField>
+            <HBox alignment="CENTER" prefHeight="22.0" prefWidth="277.0">
+               <children>
+                  <Label id="label" text="¿No tienes cuenta? Crea una" />
+                  <Hyperlink id="labelin" text="aqui." />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="61.0" prefWidth="277.0">
+               <children>
+                  <Button id="button" mnemonicParsing="false" text="Cancelar">
+                     <HBox.margin>
+                        <Insets right="50.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button id="button" mnemonicParsing="false" text="Iniciar Sesion" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</GridPane>
